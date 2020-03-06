@@ -1,0 +1,62 @@
+<div class="pf-l-gallery pf-m-gutter">
+  <div id="modal-actions"></div>
+    <div class="pf-l-gallery__item">
+      <div class="pf-c-card">
+        <div class="pf-c-card__body">
+          <button on-click="openOverlay()" class="pf-c-button pf-m-primary" type="button">Simple modal</button>
+        </div>
+      </div>
+    </div>
+    <div class="pf-l-gallery__item">
+      <div class="pf-c-card">
+        <div class="pf-c-card__body">
+          <button on-click="openOverlayWithPortal()" class="pf-c-button pf-m-primary" type="button">Modal with portal</button>
+        </div>
+      </div>
+    </div>
+    <div class="pf-l-gallery__item">
+      <div class="pf-c-card">
+        <div class="pf-c-card__body">Another card</div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- a portal to breadcrumbs -->
+  <app-breadcrumb-portal>
+    <li class="pf-c-breadcrumb__item">
+        <a href="#" class="pf-c-breadcrumb__link">Portal from</a>
+        <span class="pf-c-breadcrumb__item-divider">
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </span>
+      </li>
+      <li class="pf-c-breadcrumb__item">
+        <a href="#" class="pf-c-breadcrumb__link">Card Collection</a>
+        <span class="pf-c-breadcrumb__item-divider">
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </span>
+      </li>
+      <li class="pf-c-breadcrumb__item">
+        <a href="#" class="pf-c-breadcrumb__link pf-m-current" aria-current="page">To Breacrcumb</a>
+      </li>
+  </app-breadcrumb-portal>
+  <!-- a portal to a modal -->
+  <app-modal-actions-portal>
+    <button class="pf-c-button pf-m-link" type="button">
+      <span class="pf-c-button__icon">
+        <i class="fas fa-plus-circle" aria-hidden="true"></i>
+      </span>
+      <span class="pf-c-button__text">Link</span>
+    </button>
+    <button class="pf-c-button pf-m-link" type="button">
+      <span class="pf-c-button__text">Link</span>
+      <span class="pf-c-button__icon">
+        <i class="fas fa-plus-circle" aria-hidden="true"></i>
+      </span>
+    </button>
+    <button class="pf-c-button pf-m-plain" type="button" aria-label="Remove">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <button class="pf-c-button pf-m-inline pf-m-link" type="button">Inline link</button>
+  </app-modal-actions-portal>
+
+  <app-breadcrumb-portal>some stuff</app-breadcrumb-portal>
